@@ -1,0 +1,14 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+// Create your own map
+$custom-colors: (
+  "primario": #FF452D,
+  "secundario": #2A3342,
+  "bgmute": #F8F4F4
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
